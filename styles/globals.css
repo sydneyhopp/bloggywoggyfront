@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #ffffff;
+  color: #3c1b43;
+  padding: 1rem;
+}
+
+.navbar a {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #ffffff;
+  color: #3c1b43;
+  padding: 1rem;
+}
+
+.navbar a.page-title {
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color:#eee5e9;
+  border-radius: 15%;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: feSpotLight) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
