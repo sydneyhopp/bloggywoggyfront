@@ -8,7 +8,7 @@ const Navbar = () => {
             </a>
             <a href="/latest">the latest
             </a>
-            <a href="/best of">best of
+            <a href="/best">best of
             </a>
             <a href="/about">about
             </a>
