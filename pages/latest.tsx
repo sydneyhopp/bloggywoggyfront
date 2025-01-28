@@ -6,7 +6,7 @@ export default function Latest() {
 
         <div>
             wassup wassup wassuppppppp...
-            here's the latest from me n laura
+            here&apos;s the latest from me n laura
         </div>
 
     )
