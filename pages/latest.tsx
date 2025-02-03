@@ -18,7 +18,7 @@ interface Data{
     location: string;
     subheading: string;
     author: string;
-    date: [];
+    date: number[];
 }
 
 export default function Latest() {
@@ -61,7 +61,7 @@ export default function Latest() {
                         <li key={index}>
                             <h2>{post.title}</h2>
                             <h3>{post.location}</h3>
-                            <p>author: {post.author}, {post.date[3]}/{post.date[2]}/{post.date[4]}</p>
+                            <p>author: {post.author}, {post.date?.[3] ?? ""}/{post.date[2]}/{post.date[4]}</p>
                             <p>{post.text}</p>
                         </li>
                     ))
