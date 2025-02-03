@@ -1,17 +1,16 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
         <nav className="navbar">
 
-            <a className="page-title" href="/">food stuff!
-            </a>
-            <a href="/latest">the latest
-            </a>
-            <a href="/best">best of
-            </a>
-            <a href="/about">about
-            </a>
+
+            <Link href="/">food stuff!</Link>
+            <Link href="/latest">the latest</Link>
+            <Link href="/best">best of</Link>
+            <Link href="/about">about</Link>
+
 
 
         </nav>
