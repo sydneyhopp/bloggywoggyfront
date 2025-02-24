@@ -8,7 +8,7 @@
   left: 5vw;
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   background-color: #ffffff;
   color: #3c1b43;
   padding: 1rem;
@@ -25,8 +25,10 @@
   padding: 1rem;
 }
 
-.navbar a.page-title {
+.navbar .title {
+  color:white !important;
   font-weight: bold;
+  background-color: rgb(123, 0, 255);
 }
 
 .navbar a:hover {

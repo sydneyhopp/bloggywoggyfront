@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { API_URL, DataProps } from "@/utils/constants";
 import LatestEntry from "@/components/latestEntry";
+import Navbar from "@/components/navbar";
 
 
 const axiosInstance = axios.create({
@@ -40,12 +41,13 @@ export default function Latest() {
         fetchData();
     }, [])
 
-    if (loading) return <p>Loading latest posts...</p>;
+    if (loading) return <div><Navbar /> <p>Loading latest posts...</p></div> ;
     if (error) return <p style={{ color: "red" }}>{error}</p>;
 
     return (
 
         <div>
+            <Navbar/>
             <h2 className="BAAA">Latest from Me & Laura</h2>
             <p>wassup wassup wassuppppppp... here&apos;s the latest from me n laura</p>
             <ul>   
