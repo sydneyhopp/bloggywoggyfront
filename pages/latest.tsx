@@ -60,7 +60,9 @@ export default function Latest() {
                             author = {post.author}
                             date = {post.date}
                             text = {post.text}
-                            subheading= {post.subheading}                            />
+                            subheading= {post.subheading}   
+                            rating = {post.rating} 
+                            pictures = {post.pictures}                        />
                         </li>
                     ))
                 ) : (
