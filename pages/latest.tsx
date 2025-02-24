@@ -20,7 +20,7 @@ interface Data{
     location: string;
     subheading: string;
     author: string;
-    date: [];
+    date: [number, number, number, number, number];
 }
 
 export default function Latest() {
@@ -67,7 +67,7 @@ export default function Latest() {
                             author = {post.author}
                             date = {post.date}
                             text = {post.text}
-                            />
+                            subheading= {post.subheading}                            />
                         </li>
                     ))
                 ) : (

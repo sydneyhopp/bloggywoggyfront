@@ -7,7 +7,7 @@ interface Data{
     location: string;
     subheading: string;
     author: string;
-    date: [];
+    date: [number, number, number, number, number];
 }
 
  const LatestEntry = ({title, text, location, subheading, author, date}:Data) => {
