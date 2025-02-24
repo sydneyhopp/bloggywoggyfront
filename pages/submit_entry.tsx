@@ -1,14 +1,13 @@
 import React from "react";
 
-export default function Woody() {
+export default function About() {
 
     return (
 
         <div>
-            This is woody...
+            <h1>submit a post here!</h1>
         </div>
 
     )
 
 };
-
