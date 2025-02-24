@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { API_URL } from "@/utils/constants";
+import { API_URL, DataProps } from "@/utils/constants";
 import LatestEntry from "@/components/latestEntry";
 
 
@@ -14,18 +14,9 @@ const axiosInstance = axios.create({
 
 // use axios to do a GET request to grab posts
 
-interface Data{
-    title: string;
-    text: string;
-    location: string;
-    subheading: string;
-    author: string;
-    date: [number, number, number, number, number];
-}
-
 export default function Latest() {
 
-    const [data, setData] = useState<Data[]>([]);
+    const [data, setData] = useState<DataProps[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>();
 

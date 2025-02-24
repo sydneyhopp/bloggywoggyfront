@@ -1,16 +1,9 @@
 import React from "react";
 import styles from "@/components/latestEntry.module.scss"
+import { DataProps } from "@/utils/constants";
 
-interface Data{
-    title: string;
-    text: string;
-    location: string;
-    subheading: string;
-    author: string;
-    date: [number, number, number, number, number];
-}
 
- const LatestEntry = ({title, text, location, subheading, author, date}:Data) => {
+ const LatestEntry = ({title, text, location, subheading, author, date}:DataProps) => {
     return (
         <div className={styles.container}>
             <div>
