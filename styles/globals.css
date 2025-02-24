@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .navbar {
+  width: 50vw;
+  left: 5vw;
   display: flex;
   justify-content: space-between;
   align-items: left;
@@ -10,6 +13,8 @@
   color: #3c1b43;
   padding: 1rem;
 }
+
+
 
 .navbar a {
   display: flex;
@@ -29,20 +34,18 @@
   border-radius: 15%;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: feSpotLight) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 36px;
+}
+.BAAA{
+  background-color: red;
 }

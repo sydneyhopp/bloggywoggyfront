@@ -2,6 +2,8 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { API_URL } from "@/utils/constants";
+import LatestEntry from "@/components/latestEntry";
+
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
@@ -18,7 +20,7 @@ interface Data{
     location: string;
     subheading: string;
     author: string;
-    date: number[];
+    date: [];
 }
 
 export default function Latest() {
@@ -53,16 +55,19 @@ export default function Latest() {
     return (
 
         <div>
-            <h2>Latest from Me & Laura</h2>
+            <h2 className="BAAA">Latest from Me & Laura</h2>
             <p>wassup wassup wassuppppppp... here&apos;s the latest from me n laura</p>
             <ul>   
                 {data.length > 0 ? (
                     data.map((post, index) => (
                         <li key={index}>
-                            <h2>{post.title}</h2>
-                            <h3>{post.location}</h3>
-                            <p>author: {post.author}, {post.date?.[3] ?? ""}/{post.date[2]}/{post.date[4]}</p>
-                            <p>{post.text}</p>
+                            <LatestEntry
+                            title = {post.title}
+                            location = {post.location}
+                            author = {post.author}
+                            date = {post.date}
+                            text = {post.text}
+                            />
                         </li>
                     ))
                 ) : (

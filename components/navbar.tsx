@@ -5,18 +5,12 @@ const Navbar = () => {
     return (
         <nav className="navbar">
 
-
-            <Link href="/">food stuff!</Link>
+            <Link href="/" className="font-bold">food stuff!</Link>
             <Link href="/latest">the latest</Link>
             <Link href="/best">best of</Link>
             <Link href="/about">about</Link>
 
-
-
         </nav>
-
-
-
 
     );
 };
